@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7ebec;
+  & .main-title {
+    font-size: 20px;
+    color: #3b424e;
+  }
+}
