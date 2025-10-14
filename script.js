@@ -1,6 +1,8 @@
+const body = document.querySelector("body");
+
 let operation = {
-  firstNumber: 0,
-  secondNumber: 0,
+  firstNumber: 2,
+  secondNumber: 2,
   operator: "+",
 };
 
@@ -18,4 +20,23 @@ function multiply(firstNumber, secondNumber) {
 
 function divide(firstNumber, secondNumber) {
   return firstNumber / secondNumber;
+}
+
+function operate(operation) {
+  switch (operation.operator) {
+    case "+":
+      return add(operation.firstNumber, operation.secondNumber);
+      break;
+    case "-":
+      return subtract(operation.firstNumber, operation.secondNumber);
+      break;
+    case "*":
+      return multiply(operation.firstNumber, operation.secondNumber);
+      break;
+    case "/":
+      return divide(operation.firstNumber, operation.secondNumber);
+      break;
+    default:
+      return "Invalid operator";
+  }
 }
