@@ -4,6 +4,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Playwrite CO", cursive;
+  text-shadow: 2px 2px 3px rgba(29, 30, 44, 0.9),
+    -3px -3px 3px rgba(247, 235, 236, 0.4);
   background-color: #59656f;
   color: #e1d6d7;
   & .main-title {
